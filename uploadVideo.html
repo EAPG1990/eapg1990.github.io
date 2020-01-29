@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>gifOS</title>
+  <link rel="stylesheet" href="./styles/video1.css" id="cssFile" type="text/css">
+  <script src="https://www.WebRTC-Experiment.com/RecordRTC.js"></script>
+  <script src="https://www.webrtc-experiment.com/gif-recorder.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="bar">
+      <span>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</span>
+    </div>
+    <a href="index.html"><svg width="24px" height="26px" viewBox="0 0 24 26" version="1.1"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+        <title>arrow</title>
+        <desc>Created with Sketch.</desc>
+        <defs>
+          <path
+            d="M80.3333333,88.6666667 L83,88.6666667 L83,91.3333333 L80.3333333,91.3333333 L80.3333333,94 L77.6666667,94 L77.6666667,91.3333333 C71.4444444,91.3333333 65.2222222,91.3333333 59,91.3333333 L59,88.6666667 C65.2222222,88.6666667 71.4444444,88.6666667 77.6666667,88.6666667 L77.6666667,86 L80.3333333,86 L80.3333333,88.6666667 Z M75,83.3333333 L77.6666667,83.3333333 L77.6666667,86 L75,86 L75,83.3333333 Z M72.3333333,80.6666667 L75,80.6666667 L75,83.3333333 L72.3333333,83.3333333 L72.3333333,80.6666667 Z M69.6666667,78 L72.3333333,78 L72.3333333,80.6666667 L69.6666667,80.6666667 L69.6666667,78 Z M75,96.6666667 L75,94 L77.6666667,94 L77.6666667,96.6666667 L75,96.6666667 Z M72.3333333,99.3333333 L72.3333333,96.6666667 L75,96.6666667 L75,99.3333333 L72.3333333,99.3333333 Z M69.6666667,102 L69.6666667,99.3333333 L72.3333333,99.3333333 L72.3333333,102 L69.6666667,102 Z"
+            id="path-1"></path>
+          <filter x="-4.2%" y="-4.2%" width="108.3%" height="116.7%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feColorMatrix values="0 0 0 0 0.96823281   0 0 0 0 0.78809464   0 0 0 0 0.952825725  0 0 0 1 0"
+              type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+          </filter>
+        </defs>
+        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g id="gifOS_captura_7_exito" transform="translate(-60.000000, -77.000000)" fill-rule="nonzero">
+            <g id="nav-bar" transform="translate(1.000000, 1.000000)">
+              <g id="arrow"
+                transform="translate(71.000000, 90.000000) rotate(-180.000000) translate(-71.000000, -90.000000) ">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#110038" xlink:href="#path-1"></use>
+              </g>
+            </g>
+          </g>
+        </g>
+      </svg></a>
+    <img class="img2" src="./images/gifOF_logo.png" alt="logo">
+    <img class="img3" src="./images/gifOF_logo_dark.png" alt="logo">
+    <div class="container_theme">
+      <button class="create_guifos">Crear Guifos</button>
+      <div class="custom-select-wrapper">
+        <div class="custom-select">
+          <div class="custom-select__trigger"><span>Elegir Tema</span>
+            <div class="arrow"></div>
+          </div>
+          <div class="custom-options">
+            <span class="custom-option sailorDay selected" data-value="1"><span class="line1">S</span>ailor Day</span>
+            <span class="custom-option sailorNight" data-value="2">Sailor
+              Night</span>
+          </div>
+        </div>
+      </div>
+      <button class="mis_guifos"><span class="line1">M</span>is Guifos</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="bar_create">
+        <span>Crear Guifos</span>
+      </div>
+      <img src="./images/window_img.png" alt="window" class="window">
+      <h2>Aquí podrás crear tus propios guifos</h2>
+      <p>Crear tu <strong>guifo</strong> es muy fácil, graba cualquier imagen con tu cámara y obtén guifos <br>
+        personalizados. Los pasos para crear tu guifo son: <br>
+        <strong>1)</strong> Dar permisos de acceso a la cámara (sólo por el tiempo de uso)<br>
+        <strong>2)</strong> Capturar tu momento guifo<br>
+        <strong>3)</strong> Revisar el momento<br>
+        <strong>4)</strong> Listo para subir y compartir!<br>
+        ¿Quieres comenzar a crear tu guifo ahora?</p>
+      <form method="get" action="index.html"><button type="submit" class="cancel">Cancelar</button></form>
+      <button class="start" id="btn-start">Comenzar</button>
+    </div>
+
+    <div class="container_gif">
+      <div class="bar_create_gif">
+        <span class="stateRecording">Un Chequeo Antes de Empezar</span>
+        <img src="./images/button3.svg" alt="close">
+      </div>
+      <div class="container_video">
+        <img src="null" class="imagegif" alt="image_gif">
+        <video class="videogif" src="null" controls> Tu navegador no implementa el elemento
+          <code>video</code>.</video>
+      </div>
+      <div class="timer"></div>
+      <div class="accountant2">
+        <div id="27" class="gray"></div>
+        <div id="28" class="gray"></div>
+        <div id="29" class="gray"></div>
+        <div id="30" class="gray"></div>
+        <div id="31" class="gray"></div>
+        <div id="32" class="gray"></div>
+        <div id="33" class="gray"></div>
+        <div id="34" class="gray"></div>
+        <div id="35" class="gray"></div>
+        <div id="36" class="gray"></div>
+        <div id="37" class="gray"></div>
+        <div id="38" class="gray"></div>
+        <div id="39" class="gray"></div>
+        <div id="40" class="gray"></div>
+        <div id="41" class="gray"></div>
+        <div id="42" class="gray"></div>
+        <div id="43" class="gray"></div>
+        <div id="44" class="gray"></div>
+        <div id="45" class="gray"></div>
+      </div>
+      <button class="capture_before" id="2"></button>
+      <button class="capture" id="btn-start-recording">Capturar</button>
+      <button class="recording_before" id="4"></button>
+      <button class="recording" id="btn-stop-recording">listo</button>
+      <button class="repeat_capture" id="btn-start-recording2">Repetir Captura</button>
+      <button class="upload_guifo" id="btn-upload_guifo">Subir Guifo</button>
+    </div>
+
+    <div class="container_upload_gif">
+      <div class="bar_create_upload_gif">
+        <span>Subiendo Guifo</span>
+        <img src="./images/button3.svg" alt="close">
+      </div>
+      <div class="container_upload_world_gif">
+        <img src="./images/globe_img.png" alt="world" class="world">
+        <p class="subiendo_guifo">Estamos subiendo tu guifo…</p>
+        <div class="accountant">
+          <div class="pink"></div>
+          <div id="5" class="gray"></div>
+          <div id="6" class="gray"></div>
+          <div id="7" class="gray"></div>
+          <div id="8" class="gray"></div>
+          <div id="9" class="gray"></div>
+          <div id="10" class="gray"></div>
+          <div id="11" class="gray"></div>
+          <div id="12" class="gray"></div>
+          <div id="13" class="gray"></div>
+          <div id="14" class="gray"></div>
+          <div id="15" class="gray"></div>
+          <div id="16" class="gray"></div>
+          <div id="17" class="gray"></div>
+          <div id="18" class="gray"></div>
+          <div id="19" class="gray"></div>
+          <div id="20" class="gray"></div>
+          <div id="21" class="gray"></div>
+          <div id="22" class="gray"></div>
+          <div id="23" class="gray"></div>
+          <div id="24" class="gray"></div>
+          <div id="25" class="gray"></div>
+          <div id="26" class="gray"></div>
+        </div>
+        <p class="time">Tiempo restante: <span class="line2"></span> minutos</p>
+      </div>
+      <form method="get" action="index.html"><button type="submit" class="cancel2">Cancelar</button></form>
+    </div>
+
+    <div class="container_upload_gif_success">
+      <div class="bar_create_upload_gif_success">
+        <span>Guifo Subido Con Éxito</span>
+        <img src="./images/button3.svg" alt="close">
+      </div>
+      <div class="container_upload_world_gif_success">
+        <div class="container_results_img">
+          <figure>
+            <img src="null" alt="" class="results_img0">
+          </figure>
+        </div>
+        <div class="container_gif_success">
+          <p class="gif_success">Guifo creado con éxito</p>
+          <button class="copy_link">Copiar Enlace Guifo</button>
+          <p class="text">Enlace copiado con exito</p>
+          <form method="get" action="https://www.google.com.ar" class="download_link" target="_blank"><button
+              type="submit">Descargar Guifo</button></form>
+        </div>
+      </div>
+      <button class="ready">Listo</button>
+    </div>
+
+    <div class="bar_mis_guifos">
+      <span>Mis guifos</span>
+    </div>
+    <div class="container_mis_guifos">
+      <div class="container_mis_guifos_img guifos_img0">
+        <figure>
+          <img src="null" alt="" class="mis_guifos_img0">
+        </figure>
+        <div class="bar_trending"><span class="title_mis_guifos_img0"></span></div>
+      </div>
+      <div class="container_mis_guifos_img guifos_img1">
+        <figure>
+          <img src="null" alt="" class="mis_guifos_img1">
+        </figure>
+        <div class="bar_trending"><span class="title_mis_guifos_img1"></span></div>
+      </div>
+      <div class="container_mis_guifos_img guifos_img2">
+        <figure>
+          <img src="null" alt="" class="mis_guifos_img2">
+        </figure>
+        <div class="bar_trending"><span class="title_mis_guifos_img2"></span></div>
+      </div>
+      <div class="container_mis_guifos_img guifos_img3">
+        <figure>
+          <img src="null" alt="" class="mis_guifos_img3">
+        </figure>
+        <div class="bar_trending"><span class="title_mis_guifos_img3"></span></div>
+      </div>
+    </div>
+
+    <div class="container_mis_guifos">
+      <div class="container_mis_guifos_img4 guifos_img4">
+        <figure>
+          <img src="null" alt="" class="mis_guifos_img4">
+        </figure>
+        <div class="bar_trending"><span class="title_mis_guifos_img4"></span></div>
+      </div>
+      <div class="container_mis_guifos_img guifos_img5">
+        <figure>
+          <img src="null" alt="" class="mis_guifos_img5">
+        </figure>
+        <div class="bar_trending"><span class="title_mis_guifos_img5"></span></div>
+      </div>
+      <div class="container_mis_guifos_img guifos_img6">
+        <figure>
+          <img src="null" alt="" class="mis_guifos_img6">
+        </figure>
+        <div class="bar_trending"><span class="title_mis_guifos_img6"></span></div>
+      </div>
+    </div>
+
+    <div class="container_mis_guifos">
+      <div class="container_mis_guifos_img guifos_img7">
+        <figure>
+          <img src="null" alt="" class="mis_guifos_img7">
+        </figure>
+        <div class="bar_trending"><span class="title_mis_guifos_img7"></span></div>
+      </div>
+      <div class="container_mis_guifos_img guifos_img8">
+        <figure>
+          <img src="null" alt="" class="mis_guifos_img8">
+        </figure>
+        <div class="bar_trending"><span class="title_mis_guifos_img8"></span></div>
+      </div>
+      <div class="container_mis_guifos_img9 guifos_img9">
+        <figure>
+          <img src="null" alt="" class="mis_guifos_img9">
+        </figure>
+        <div class="bar_trending"><span class="title_mis_guifos_img9"></span></div>
+      </div>
+    </div>
+  </main>
+  
+  <script src="./scripts/video.js"></script>
+</body>
+
+</html>

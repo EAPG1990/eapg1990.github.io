@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>gifOS</title>
+  <link rel="stylesheet" href="./styles/theme1.css" id="cssFile" type="text/css">
+</head>
+
+<body>
+  <header>
+    <div class="bar">
+      <span>¡Bienvenidos/as a Guifos.com! ——————Donde los gifs están.////// Número de visitas: 12.765.803</span>
+    </div>
+    <div class="container">
+      <img class="img1" src="./images/gifOF_logo.png" alt="logo">
+      <img class="img2" src="./images/gifOF_logo_dark.png" alt="logo">
+      <form class="createGif" method="get" action="uploadVideo.html"><button type="submit">Crear Guifos</button></form>
+      <div class="custom-select-wrapper">
+        <div class="custom-select">
+          <div class="custom-select__trigger"><span>Elegir Tema</span>
+            <div class="arrow"></div>
+          </div>
+          <div class="custom-options">
+            <span class="custom-option sailorDay selected" data-value="1"><span class="line1">S</span>ailor Day</span>
+            <span class="custom-option sailorNight" data-value="2">Sailor Night</span>
+          </div>
+        </div>
+      </div>
+      <a class="misguifos" href="uploadVideo.html"><span class="line1">M</span>is Guifos</a>
+    </div>
+  </header>
+
+  <main>
+    <form class="bar_search">
+      <div class="search1"><span>Buscar</span></div>
+      <div class="search2">
+        <input type="search" id="search" name="q" placeholder="Busca gifs, hashtags, temas, busca lo que quieras…"
+          autocomplete="off">
+        <button id="btnSearch">
+          <img src="./images/lupa_inactive.svg" alt="magnifying_glass" class="lupa1">
+          <img src="./images/lupa.svg" alt="magnifying_glass_light" class="lupa2">
+          <img src="./images/combined_shape.svg" alt="magnifying_glass_light" class="lupa3">
+          <img src="./images/lupa_light.svg" alt="magnifying_glass_light" class="lupa4">Buscar</button>
+      </div>
+    </form>
+    <div class="container_input">
+      <button class="btn1" value=""></button>
+      <button class="btn2" value=""></button>
+      <button class="btn3" value=""></button>
+    </div>
+
+    <div class="container_search">
+      <button id="btn10" class="form_suggest_img10"></button>
+      <button id="btn11" class="form_suggest_img11"></button>
+      <button id="btn12" class="form_suggest_img12"></button>
+    </div>
+    <div class="results">
+      <span class="result_title"></span>
+    </div>
+
+    <div class="container_results">
+      <div class="container_results_img">
+        <figure>
+          <img src="null" alt="results_img0" class="results_img0">
+        </figure>
+        <div class="bar_results"><span class="title_results_img0"></span></div>
+      </div>
+      <div class="container_results_img">
+        <figure>
+          <img src="null" alt="results_img1" class="results_img1">
+        </figure>
+        <div class="bar_results"><span class="title_results_img1"></span></div>
+      </div>
+      <div class="container_results_img">
+        <figure>
+          <img src="null" alt="results_img2" class="results_img2">
+        </figure>
+        <div class="bar_results"><span class="title_results_img2"></span></div>
+      </div>
+      <div class="container_results_img">
+        <figure>
+          <img src="null" alt="results_img3" class="results_img3">
+        </figure>
+        <div class="bar_results"><span class="title_results_img3"></span></div>
+      </div>
+    </div>
+
+    <div class="container_results">
+      <div class="container_results_img4">
+        <figure>
+          <img src="null" alt="" class="results_img4">
+        </figure>
+        <div class="bar_results"><span class="title_results_img4"></span></div>
+      </div>
+      <div class="container_results_img">
+        <figure>
+          <img src="null" alt="" class="results_img5">
+        </figure>
+        <div class="bar_results"><span class="title_results_img5"></span></div>
+      </div>
+      <div class="container_results_img">
+        <figure>
+          <img src="null" alt="" class="results_img6">
+        </figure>
+        <div class="bar_results"><span class="title_results_img6"></span></div>
+      </div>
+    </div>
+
+    <div class="container_results">
+      <div class="container_results_img">
+        <figure>
+          <img src="null" alt="" class="results_img7">
+        </figure>
+        <div class="bar_results"><span class="title_results_img7"></span></div>
+      </div>
+      <div class="container_results_img">
+        <figure>
+          <img src="null" alt="" class="results_img8">
+        </figure>
+        <div class="bar_results"><span class="title_results_img8"></span></div>
+      </div>
+      <div class="container_results_img9">
+        <figure>
+          <img src="null" alt="" class="results_img9">
+        </figure>
+        <div class="bar_results"><span class="title_results_img9"></span></div>
+      </div>
+    </div>
+
+    <div class="suggest">
+      <span>Hoy te sugerimos:</span>
+    </div>
+    <div class="container_suggest">
+      <div class="container_suggest_img">
+        <div class="bar_suggest"><span class="title_suggest_img0"></span><img src="./images/button3.svg" alt=""
+            class="button3"></div>
+        <figure>
+          <img src="null" alt="" class="suggest_img0">
+        </figure>
+        <button id="btn4" class="form_suggest_img0">Ver más...</button>
+      </div>
+      <div class="container_suggest_img">
+        <div class="bar_suggest"><span class="title_suggest_img1"></span><img src="./images/button3.svg" alt=""
+            class="button3"></div>
+        <figure>
+          <img src="null" alt="" class="suggest_img1">
+        </figure>
+        <button id="btn5" class="form_suggest_img1">Ver más...</button>
+      </div>
+      <div class="container_suggest_img">
+        <div class="bar_suggest"><span class="title_suggest_img2"></span><img src="./images/button3.svg" alt=""
+            class="button3"></div>
+        <figure>
+          <img src="null" alt="" class="suggest_img2">
+        </figure>
+        <button id="btn6" class="form_suggest_img2">Ver más...</button>
+      </div>
+      <div class="container_suggest_img">
+        <div class="bar_suggest"><span class="title_suggest_img3"></span><img src="./images/button3.svg" alt=""
+            class="button3"></div>
+        <figure>
+          <img src="null" alt="" class="suggest_img3">
+        </figure>
+        <button id="btn7" class="form_suggest_img3">Ver más...</button>
+      </div>
+    </div>
+
+    <div class="trending">
+      <span>Tendencias:</span>
+    </div>
+    <div class="container_trending">
+      <div class="container_trending_img">
+        <figure>
+          <img src="null" alt="" class="trending_img0">
+        </figure>
+        <div class="bar_trending"><span class="title_trending_img0"></span></div>
+      </div>
+      <div class="container_trending_img">
+        <figure>
+          <img src="null" alt="" class="trending_img1">
+        </figure>
+        <div class="bar_trending"><span class="title_trending_img1"></span></div>
+      </div>
+      <div class="container_trending_img">
+        <figure>
+          <img src="null" alt="" class="trending_img2">
+        </figure>
+        <div class="bar_trending"><span class="title_trending_img2"></span></div>
+      </div>
+      <div class="container_trending_img">
+        <figure>
+          <img src="null" alt="" class="trending_img3">
+        </figure>
+        <div class="bar_trending"><span class="title_trending_img3"></span></div>
+      </div>
+    </div>
+
+    <div class="container_trending">
+      <div class="container_trending_img4">
+        <figure>
+          <img src="null" alt="" class="trending_img4">
+        </figure>
+        <div class="bar_trending"><span class="title_trending_img4"></span></div>
+      </div>
+      <div class="container_trending_img">
+        <figure>
+          <img src="null" alt="" class="trending_img5">
+        </figure>
+        <div class="bar_trending"><span class="title_trending_img5"></span></div>
+      </div>
+      <div class="container_trending_img">
+        <figure>
+          <img src="null" alt="" class="trending_img6">
+        </figure>
+        <div class="bar_trending"><span class="title_trending_img6"></span></div>
+      </div>
+    </div>
+
+    <div class="container_trending">
+      <div class="container_trending_img">
+        <figure>
+          <img src="null" alt="" class="trending_img7">
+        </figure>
+        <div class="bar_trending"><span class="title_trending_img7"></span></div>
+      </div>
+      <div class="container_trending_img">
+        <figure>
+          <img src="null" alt="" class="trending_img8">
+        </figure>
+        <div class="bar_trending"><span class="title_trending_img8"></span></div>
+      </div>
+      <div class="container_trending_img9">
+        <figure>
+          <img src="null" alt="" class="trending_img9">
+        </figure>
+        <div class="bar_trending"><span class="title_trending_img9"></span></div>
+      </div>
+    </div>
+  </main>
+  <script src="./scripts/main.js"></script>
+</body>
+
+</html>
