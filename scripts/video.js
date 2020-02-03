@@ -5,6 +5,7 @@ var image = document.querySelector(".imagegif");
 const apiKey = "xPirKTummUELzyQwasYodMKm7CDwc9p5";
 var recorder; // globally accessible
 var array = [];
+var arrayGuifos=[];
 
 //Si fue presionado la opcion misGuifos en el index, te redirigue a la pagina de upload y muestra los gifs con la información del localStorage
 var showMisGuifosFromIndex = sessionStorage.getItem("misguifos");
@@ -298,7 +299,15 @@ function stopRecordingCallback() {
                 document.querySelector(".text").style.display = "none";
               }, 5000);
             });
-            localStorage.setItem(dataid, JSON.stringify(data));
+            if (localStorage.getItem("guifos")==null){
+              arrayGuifos.push(data);
+              localStorage.setItem("guifos", JSON.stringify(arrayGuifos));
+            }else{
+              arrayGuifos = JSON.parse(localStorage.getItem("guifos"));
+              arrayGuifos.push(data);
+              localStorage.setItem("guifos", JSON.stringify(arrayGuifos));
+            }
+            
           })
           .catch(error => {
             return error;
@@ -328,10 +337,10 @@ document.querySelector(".ready").addEventListener("click", () => {
 });
 
 function createMisGuifos(){
-  for (var i = 0; i < localStorage.length; i++) {
-    var valor = localStorage.getItem(localStorage.key(i));
-    const data = JSON.parse(valor);
-    array.push(data);
+  var valor = localStorage.getItem("guifos");
+  const data = JSON.parse(valor);
+  for (var i = 0; i < data.length; i++) {
+    array.push(data[i]);
   }
   //Ordeno por fecha (del mas reciente al mas viejo en el localStorage)
   array.sort(function(a, b) {
@@ -355,7 +364,7 @@ function createMisGuifos(){
     imagen.setAttribute("src", array[i].data.images.downsized.url);
     imagen.setAttribute("alt", array[i].data.title);
     let title_trending = document.querySelector(".title_mis_guifos_img" + i);
-    let hashtag = array[0].data.slug;
+    let hashtag = array[i].data.slug;
     var hashtag_split = hashtag.split("-", 1);
     title_trending.innerHTML = "#" + hashtag_split;
     document.querySelector(".guifos_img" + i).style.display = "block";
